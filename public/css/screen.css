@@ -1,0 +1,95 @@
+body{
+	background: #292222;
+	font-family: Helvetica, Segoe Ui, Arial;
+	font-size: 10pt;
+	text-shadow: 0 -1px 1px white;
+	text-color: #ccc;
+}
+.login-window{
+	display: inline-block;
+	width: 350px;
+	height: 220px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin: -200px 0 0 -200px;
+	background: white;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+	border-radius: 10px;
+	box-shadow: 0 0 15px #222;
+	border: solid 1px #aaa;
+	text-align: center;
+	padding: 25px;
+}
+.login-window input{
+	font-weight: bold;
+	display: block;
+	width: 175px;
+	float: right;
+	clear: right;
+	padding: 3px 2px 3px 3px;
+	margin: 5px 0;
+	height: 25px;
+	-webkit-transition: all .25s ease-in-out;
+	outline: none;
+	background: transparent;
+	border: none;
+	border-right: solid 5px #ccc;
+	border-bottom: solid 1px #ccc;
+	color: #888;
+	text-align: left;
+	border-left: dotted 1px #ddd;
+}
+.login-window input:hover, .login-window input:active, .login-window input:focus{
+	color: #222;
+}
+.login-window label{
+	display: block;
+	border-left: solid 5px #ccc;
+	border-bottom: solid 1px #ccc;
+	width: 150px;
+	margin: 5px 0;
+	padding: 10px 0 6px;
+	float: left;
+	clear: left;
+	color: #888;
+}
+.login-window input#submit{
+	text-align: center;
+	width: 350px;
+	position: absolute;
+	left: 25px;
+	bottom: -1px;
+	margin: 0;
+	height: auto;
+	padding: 10px 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(1, #fff));
+	border-radius: 2px;
+	border: solid 1px #ccc;
+	color: #222;
+	border-bottom: none;
+}
+.login-window input#submit:hover, .login-window input#submit:active, .login-window input#submit:focus{
+	background: #444;
+	border-color: #222;
+	color: #fff;
+}
+.login-window h1{
+	font-size: 18pt;
+	padding: 0;
+	margin: 0;
+	height: 25px;
+	color: #444;
+	padding-top: 25px;
+}
+.login-window h2{
+	font-size: 10pt;
+	padding: 0;
+	height: 0;
+	margin: 0;
+	padding-bottom: 50px;
+        color: #ccc;	
+}
