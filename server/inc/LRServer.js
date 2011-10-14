@@ -1,12 +1,11 @@
-gw_server = require('./LRGateway.js');
+Common = require("./LRCommon.js"); 
 
 init = function(gateway_port)	{
-	if (gateway_port == undefined) gateway_port = 3000;
+        Common.config.readAll(); 
 	console.log("Starting Application");
-	err = require("./LRGateway.js").start(gateway_port);
-	if (!err) console.log("Started primary gateway on port " + gateway_port);
-	else console.log("Fatal error while attempting to setup primary gateway on port " + gateway_port + "\nError : " + err);
-
+        require("./LRSandbox").initInfoGW();
+        require("./LRSandbox").initAccessGW();
+        require("./LRSandbox").initStaticGW();
 }
 
 exports.initialize = init;
